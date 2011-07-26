@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin t&iacute;tulo</title>
+</head>
+
+<body>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr align="center">
+        <td>
+			<table width="927" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td colspan="3" align="center">CENTRO DE OPERACIONES</td>
+              </tr>
+              <tr>
+                <td height="9" colspan="3"></td>
+              </tr>
+              <tr>
+                <td width="458" height="166" align="center">
+                	<table width="200" border="0" cellpadding="3" cellspacing="0">
+                      <tr>
+                        <td height="34" colspan="3" align="center">CLIENTES</td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                        	<form name="registrar_cliente_form" method="post" action="clientes/registro_clientes.php">
+                        		<input name="registrar_cliente" class='btn btnadd' type="submit" value="Registrar un nuevo cliente" />
+                          	</form>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td align="center">
+                        	<form name="mostrar_cliente_form" method="post" action="clientes/mostart_cli.php" >
+                        		<input name="mostrar_cliente" class='btn btnuser' type="submit" value="Mostrar todos los clientes" />
+                                </form>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                        	<form name="buscar_cliente_form" method="post" action="clientes/buscar_clientes.php">
+                            	<input name="buscar_cliente" class='btn btnfind' type="submit" value="Buscar datos de un cliente"  />
+                            </form>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td align="center">
+                        	<!--<form name="cliente_ausente_form" method="post">
+                        		<input name="cliente_ausente" type="submit" value="SIN USO" />
+                            </form>-->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                           <input name="delete" type="button" class='btn btndelete' value="Eliminar datos de un cliente" onclick="solo_admin()"/>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                        	<form name="actualizar_cliente_form" method="post" action="clientes/buscar_clientes.php">
+                            	<input name="actualizar_cliente" class='btn btnrefresh' type="submit" value="Actualizar datos de un cliente" />
+                            </form>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table>
+                </td>
+                <td width="4">|<br>|<br>|<br>|<br>|<br>|<br>|<br></td>
+                <td width="465" align="center">
+                	<table width="200" border="0" cellpadding="3" cellspacing="0">
+                      <tr>
+                        <td height="34" colspan="3" align="center">SERVICIOS TECNICOS</td>
+                      </tr>
+                      <tr>
+                        <td width="230" align="center">
+                        	<form name="registrar_servicio_form" method="post" action="clientes/buscar_clientes.php">
+                        		<input name="registar_servicio" type="submit" value="Registrar servicios" />
+                                </form>
+                        </td>
+                        <td width="4">&nbsp;</td>
+                        <td width="206" align="center">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                        	<form name="eliminar_servicio_form" method="post">
+                        		<input name="eliminar_servicio" type="submit" value="SIN USO" />
+                            </form>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                      </tr>
+                      <tr>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="31" align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" align="center">----------------------------------------------------------------------------------------------------------------------------------------------------------</td>
+              </tr>
+              <tr>
+                <td height="166" align="center">
+                	<table width="200" border="0" cellpadding="3" cellspacing="0">
+                      <tr>
+                        <td height="34" colspan="3" align="center">PARTES DE COMPUTADORES</td>
+                      </tr>
+                      <tr>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td align="center">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                        <input name="consultar" type="button" value="SIN USO"/></td>
+                        <td>&nbsp;</td>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO"/></td>
+                      </tr>
+                      <tr>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table>
+                </td>
+                <td>|<br>|<br>|<br>|<br>|<br>|<br>|<br></td>
+                <td align="center">
+                	<table width="200" border="0" cellpadding="3" cellspacing="0">
+                      <tr>
+                        <td height="34" colspan="3" align="center">INVENTARIO</td>
+                      </tr>
+                      <tr>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td align="center">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO"/></td>
+                      </tr>
+                      <tr>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" align="center">----------------------------------------------------------------------------------------------------------------------------------------------------------</td>
+              </tr>
+              <tr>
+                <td align="center">
+                	<table width="200" border="0" cellpadding="3" cellspacing="0">
+                      <tr>
+                        <td height="34" colspan="3" align="center">ESTADISTICAS CONTABLES</td>
+                      </tr>
+                      <tr>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td align="center">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                      </tr>
+                      <tr>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center"><input name="consultar" type="button" value="SIN USO" /></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table>
+                </td>
+                <td>|<br>|<br>|<br>|<br>|<br>|<br>|<br></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="45" colspan="3" align="center"><input name="cerrar" type="button" value="Cerrar Sesion" onclick="conf_session2()"/></td>
+              </tr>
+              <tr>
+                <td colspan="3" align="center" class="piepage">Desarrollado por: Lenin Garizabalo</td>
+              </tr>
+            </table>
+        </td>
+      </tr>
+    </table>

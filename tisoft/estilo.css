@@ -1,0 +1,311 @@
+@charset "utf-8";
+/* CSS Document */
+
+.asterisco {
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #F00;
+	font-size: 14px;
+}
+.fontstyle {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	background-color: #CCC;
+	font-weight: bold;
+	display: compact;
+	border: medium double #666;
+}
+.piepage {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #999;
+	font-weight: bold;
+}
+.tituloprincipal {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-style: italic;
+	font-weight: bolder;
+}
+/*.stylecelltitulo {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	background-color: #0099FF;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: dashed;
+	border-right-style: none;
+	border-bottom-style: dashed;
+	border-left-style: none;
+	border-top-color: #666;
+	border-bottom-color: #666;
+	color: #000;
+}*/
+.background{ /* clase para el fondo de la tabla dos*/
+	background-image:url(images/fondo_principal.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	width:700px;
+	height:527px;
+	margin:auto;
+}
+
+.font_style_lp{ /* estilo para las fuentes de los textos (usuario/contraseña) del formulario en la pagina principal */
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:24px;
+}
+.bgn_page{ /* fondo para las paginas de que muestran alert y que no tienen ningun tipo de interface de usuario */
+	background-image:url(images/fondo_psil.jpg);
+	background-repeat:repeat;
+}
+.divcliente{
+	width:200px;
+	height:200px;
+	margin-right:20px;
+}
+.divserv{
+	width:200px;
+	height:200px;
+}
+.divprocesar{
+	width:10%;
+	float:left;
+}
+/*-------------------------------------css botones de los page-----------------------------------------*/
+.btn{
+	height: 23px; 
+	background-color: #f5f5f0; 
+	border-bottom: 1px solid #2E9AFE;
+	border-right:1px solid #2E9AFE; 
+	border-top:1px solid #2E9AFE;
+	border-left:1px solid #2E9AFE; 
+	font-size: 12px;
+	color:black; 
+	background-image: url(images/btns.png);
+	padding-left: 20px; 
+	background-repeat: no-repeat; 
+	cursor:hand; 
+	cursor:pointer;
+ 	margin-left:5px; 
+	margin-right:5px; 
+	outline-width:0px;
+	-moz-border-radius: 7px 7px 7px 7px; 
+	-moz-box-shadow: 2px 2px 0px #424242;
+}
+
+.btn:hover{
+	height: 23px; 
+	background-color: #f5f5f0; 
+	border-bottom: 1px solid #2E9AFE;
+  	border-right:1px solid #AAAAAA; 
+	border-top:0px; 
+	border-left:0px;
+  	font-size: 12px; 
+	color:black;
+	padding-left: 20px; 
+	background-repeat: no-repeat;
+	cursor:hand; 
+	cursor:pointer; 
+	margin-left:5px; 
+	margin-right:5px;
+	outline-width:0px;
+	background-image: url(images/btns_act.png);
+	-moz-border-radius: 4px 10px 4px 10px; 
+	/*-moz-box-shadow: 1px 1px 0px #090;*/
+}
+
+.btnadd{ background-position: 0px -92px; }
+.btnfind{ background-position: 0px -115px; }
+.btnprint{ background-position: 0px -69px; }
+.btnmail{ background-position: 0px -138px; }
+.btnsave{ background-position: 0px 0px; }
+.btndelete{ background-position: 0px -46px; }
+.btncancel{ background-position: 0px -23px; }
+.btncopy{ background-position: 0px -161px; }
+.btnnonuser{ background-position: 0px -322px; }
+.btnuser{ background-position: 0px -276px; }
+.btnadmin{ background-position: 0px -299px; }
+.btncheck{ background-position: 0px -207px; }
+.btnuncheck{ background-position: 0px -230px; }
+.btnrefresh{  background-position: 0px -345px;  }
+.btnlogout{ background-position: 0px -368px; }
+.btnapply{ background-position: 0px -184px; }
+
+/*------------clases que se puede aplicar en los input de las page  <---------
+class='btn btnadd' value='Añadir'
+class='btn btnfind' value='Buscar'>
+class='btn btnprint' value='Imprimir'>
+class='btn btnmail' value='Enviar por email'>
+class='btn btnsave' value='Guardar'>
+class='btn btndelete' value='Eliminar'>
+class='btn btncancel' value='Cancelar'>
+class='btn btncopy' value='Copiar'>
+class='btn btnonuser' value='Un usuario'>
+class='btn btnuser' value='Otro usuario'>
+class='btn btnadmin' value='Un administrador'>
+class='btn btncheck' value='Marcar todos'>
+class='btn btnuncheck' value='Desmarcar todos'>
+class='btn btnrefresh' value='Refrescar'>
+class='btn btnlogout' value='Desconectar'>
+class='btn btnapply' value='Aplicar modificaciones'>
+---------------------------------------------------*/
+/*-----------------------------------------------fin--------------------------------------------------*/
+
+/*--------------------------------------grafico------------------------------------------*/
+.fdivsup{ /* esta clase controla el fondo del div superior que contiene parte del fondo de la pagina */
+	background-image:url(images/fdivsup.jpg);
+	background-repeat:repeat-x;
+	height:100px;
+	width:100%;
+}
+.divcenter{ /* div central donde esta el sud div center */
+	margin:0px;
+	padding:0px;
+}
+.fdivinf{ /* esta clase controla el fondo del div superior que contiene parte del fondo de la pagina */
+	background-image:url(images/fdivinf.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	height:100px;
+	width:100%;
+}
+.subdivcenter{ /* clase para el subdiv que se encuentra dentro del div central donde se cargaran los pricipales procesos */
+	width:100%;
+	height:448px;
+	margin:auto;
+}
+.divesquinasiz{ /* clase para el div de la esquina superior izquierda que estan dentro del subdivcenter */
+	background-image:url(images/esquinasiz.jpg);
+	background-repeat:no-repeat;
+	/*width:46px;
+	height:37px;
+	margin:0px;
+	position:relative;
+	float:left;*/
+}
+.divsusucenter{ /* clase para el div central superior que estan dentro del subdivcenter */
+	background-image:url(images/centersup.jpg);
+	background-repeat:repeat-x;
+	/*margin:0px;
+	position:relative;
+	height:37px;
+	width:457px;
+	float:left;*/
+}
+.divesquinasde{ /* clase para el div de la esquina superior derecha que estan dentro del subdivcenter */
+	background-image:url(images/esquinasde.jpg);
+	background-repeat:no-repeat;
+	/*position:relative;
+	width:46px;
+	height:37px;
+	margin:0px;
+	float:left;*/
+}
+.divladoizq {
+	background-image: url(images/ladoizq.jpg);
+	background-repeat: repeat-y;
+	/*margin: 0px;
+	float: left;
+	width: 46px;
+	position: relative;
+	height: 194px;
+	background-position: right;*/
+}
+.divcont{ /* clase  contiene el div en donde se podran organizar los contenidos */
+	background-image: url(images/fcont.jpg);
+	background-repeat:repeat;
+	/*margin:0px;
+	width:494px;
+	height:372px;
+	float:left;
+	position:relative;*/
+}
+.divladoder{ /* div del lado derecho que contiene el borde derecho */
+	background-image:url(images/ladoder.jpg);
+	/*background-repeat: repeat-y;
+	margin: 0px;
+	float: left;
+	width: 46px;
+	position: relative;
+	height: 194px;
+	background-position: left;*/
+}
+.divesquinaiizq{ /* div para esquina inferior derecha */
+	background-image:url(images/esquinaiizq.jpg);
+	background-repeat:no-repeat;
+	/*position:relative;
+	width:46px;
+	height:37px;
+	margin:0px;
+	float:left;*/
+}
+.divcenterinf{ /* div para el borde del centro */
+	background-image:url(images/centerinf.jpg);
+	background-repeat:repeat-x;
+	/*background-position:top;
+	margin:0px;
+	position:relative;
+	height:37px;
+	width:457px;
+	float:left;*/
+}
+.divesquinaider{ /* div para la esquina inferior derecha */
+	background-image:url(images/esquinaider.jpg);
+	background-repeat:no-repeat;
+	/*position:relative;
+	width:46px;
+	height:37px;
+	margin:0px;
+	float:left;*/
+}
+.body{
+	background-image:url(images/fondo_psil.jpg);
+	background-repeat:repeat;
+	 margin:0px;
+	 height:auto;
+}
+/*------------------------------------------fin------------------------------------------*/
+
+/*---------------CSS TITULO DEL PROCESO EN CUAL SE ENCUENTRA CUANDO ESTA EN EL CENTRO DE OP ---------*/
+/*---------cliente-----------*/
+.stiframesopcli {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	background-color: #FFFF66;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: dashed;
+	border-right-style: none;
+	border-bottom-style: dashed;
+	border-left-style: none;
+	border-top-color: #666;
+	border-bottom-color: #666;
+	color: #000;
+}
+/*--------------fin------------------*/
+/*--------------servicios------------*/
+.stiframesopserv {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	background-color: #009933;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: dashed;
+	border-right-style: none;
+	border-bottom-style: dashed;
+	border-left-style: none;
+	border-top-color: #666;
+	border-bottom-color: #666;
+	color: #000;
+}
+/*--------------fin------------------*/
+/*--------------------------------------------------FIN---------------------------------------------*/
