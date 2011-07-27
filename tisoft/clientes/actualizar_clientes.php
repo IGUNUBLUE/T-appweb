@@ -19,11 +19,11 @@
 	if(isset($_SESSION['login'])) 
     {
 		require("../conexion_db.php"); /*llamando al archivo conexio_db que contiene la conexion con la base de datos*/
-		
+/*consulta mysql---------------- */		
 		$num_cliente = $_POST['actualizar_cliente_hidden'];
-		$cons = mysql_query("SELECT * FROM bd_tisoft.clientes where num_doc = '$num_cliente'");
+		$cons = mysql_query("SELECT * FROM tappweb_99k_db.clientes where num_doc = '$num_cliente'");
 		$resp3 = mysql_fetch_row($cons);
-		
+/* fin de la consulta-----------------*/		
 		if(isset($_POST["yes_actualizar"]))
 		{
 			$tipo_documento = $_POST['tipo_documento'];
@@ -37,8 +37,9 @@
 			$barrio = $_POST['barrio'];
 			$municipio = $_POST['municipio'];
 			$telefono = $_POST['telefono'];
-			
-			$cons1 = mysql_query("UPDATE bd_tisoft.clientes SET tipo_doc='$tipo_documento', num_doc='$numero_cliente', nombre='$nombre', apellido='$apellido', correo='$correo', estrato='$estrato', genero='$genero', direccion='$direccion', barrio='$barrio', municipio='$municipio', telefono='$telefono' where num_doc = '$numero_cliente' ");
+/* consulta mysql-------------------*/			
+			$cons1 = mysql_query("UPDATE tappweb_99k_db.clientes SET tipo_doc='$tipo_documento', num_doc='$numero_cliente', nombre='$nombre', apellido='$apellido', correo='$correo', estrato='$estrato', genero='$genero', direccion='$direccion', barrio='$barrio', municipio='$municipio', telefono='$telefono' where num_doc = '$numero_cliente' ");
+/*fin de la consulta-----------------*/
 				?>
 				<script language='javascript' type='text/javascript'>
 					'domready',Sexy = new SexyAlertBox();
