@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>T!Appweb | clientes</title>
+<title>T-appweb | Clientes</title>
 <link href="../estilo.css" rel="stylesheet" type="text/css" />
 <link href="../sexyalertbox.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../funciones.js" language="javascript"></script>
@@ -20,7 +20,7 @@ if(isset($_SESSION['login']))
 	{
 		require("../conexion_db.php"); /*llamando al archivo conexio_db que contiene la conexion con la base de datos*/
 		
-		$cons = mysql_query('SELECT * FROM bd_tisoft.clientes');
+		$cons = mysql_query('SELECT * FROM tappweb_99k_db.clientes');
 		?>
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 		  <tr>
