@@ -21,7 +21,7 @@
 		require("../conexion_db.php"); /*llamando al archivo conexio_db que contiene la conexion con la base de datos*/
 		
 		$num_cliente = $_POST['numero_cliente'];
-		$cons = mysql_query("SELECT * FROM bd_tisoft.clientes where num_doc = '$num_cliente' ");
+		$cons = mysql_query("SELECT * FROM tappweb_99k_db.clientes where num_doc = '$num_cliente' ");
 		$resp4 = mysql_fetch_row($cons);
 		if($resp4 != "")
 		{
