@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>T!Appweb | clientes</title>
+<title>T-appweb | clientes</title>
 <link href="../estilo.css" rel="stylesheet" type="text/css" />
 <link href="../sexyalertbox.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="../funciones.js" language="javascript"></script><script type="text/javascript" src="../mootools.js" language="javascript"></script><script type="text/javascript" src="../sexyalertbox.v1.1.js" language="javascript"></script><script type="text/javascript" src="../sexyalertbox.packed.js" language="javascript"></script>
 </head>
@@ -29,9 +29,10 @@ if(isset($_SESSION['login']))
 			$barrio = $_POST['barrio'];
 			$municipio = $_POST['municipio'];
 			$telefono = $_POST['telefono'];
-			
-			$cons1 = mysql_query("SELECT * FROM bd_tisoft.clientes where nombre = '$nombre' and apellido = '$apellido' and num_doc = '$num_cliente'");
+/*consulta mysql--------------------------*/			
+			$cons1 = mysql_query("SELECT * FROM tappweb_99k_db.clientes where nombre = '$nombre' and apellido = '$apellido' and num_doc = '$num_cliente'");
 			$resp1 = mysql_fetch_row($cons1);
+/* fin de la consulta---------------------*/
 			if($resp1 != "")
 			{
 				?><script language='javascript' type='text/javascript'>
@@ -102,7 +103,7 @@ if(isset($_SESSION['login']))
 			}
 			else
 			{
-				$insert1 = mysql_query("INSERT INTO bd_tisoft.clientes (tipo_doc, num_doc, nombre, apellido, correo, estrato, genero, direccion, barrio, municipio, telefono)
+				$insert1 = mysql_query("INSERT INTO tappweb_99k_db.clientes (tipo_doc, num_doc, nombre, apellido, correo, estrato, genero, direccion, barrio, municipio, telefono)
 				VALUES('$tipo_documento', '$num_cliente', '$nombre', '$apellido', '$correo', '$estrato', '$genero', '$direccion', '$barrio', '$municipio', '$telefono')");
 				?><script language='javascript' type='text/javascript'>
 				'domready',Sexy = new SexyAlertBox();
