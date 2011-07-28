@@ -19,10 +19,11 @@
 	if(isset($_SESSION['login'])) 
     {
 		require("../conexion_db.php"); /*llamando al archivo conexio_db que contiene la conexion con la base de datos*/
-		
+/*consulta mysql---------------------------*/
 		$num_cliente = $_POST['numero_cliente'];
 		$cons = mysql_query("SELECT * FROM tappweb_99k_db.clientes where num_doc = '$num_cliente' ");
 		$resp4 = mysql_fetch_row($cons);
+/*fin de la consulta-----------------------*/
 		if($resp4 != "")
 		{
 		?>
