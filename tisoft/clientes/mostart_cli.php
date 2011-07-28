@@ -19,8 +19,9 @@
 if(isset($_SESSION['login']))
 	{
 		require("../conexion_db.php"); /*llamando al archivo conexio_db que contiene la conexion con la base de datos*/
-		
+/*consulta mysql---------------------*/		
 		$cons = mysql_query('SELECT * FROM tappweb_99k_db.clientes');
+/*fin de la consulta-----------------*/
 		?>
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 		  <tr>
