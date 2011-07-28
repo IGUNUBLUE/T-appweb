@@ -23,7 +23,7 @@
 		$num_cliente = $_POST['actualizar_cliente_hidden'];
 		$cons = mysql_query("SELECT * FROM tappweb_99k_db.clientes where num_doc = '$num_cliente'");
 		$resp3 = mysql_fetch_row($cons);
-/* fin de la consulta-----------------*/		
+/*fin de la consulta-----------------*/		
 		if(isset($_POST["yes_actualizar"]))
 		{
 			$tipo_documento = $_POST['tipo_documento'];
