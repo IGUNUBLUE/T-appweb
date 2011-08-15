@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>T!soft 2.0&nbsp;|&nbsp;Inicio</title>
+<title>T!soft 1.0&nbsp;|&nbsp;Inicio</title>
 <link href="estilo.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="sexyalertbox.css" type="text/css" media="all" />
 <script type="text/javascript" src="funciones.js" language="javascript"></script>
